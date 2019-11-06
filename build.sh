@@ -1,7 +1,7 @@
 #!/bin/bash
 
-go get github.com/xtaci/kcptun/client
-go get github.com/xtaci/kcptun/server
+go get -u -v github.com/xtaci/kcptun/client
+go get -u -v github.com/xtaci/kcptun/server
 
 VERSION=`date -u +%Y%m%d`
 LDFLAGS="-X main.VERSION=$VERSION -s -w"
