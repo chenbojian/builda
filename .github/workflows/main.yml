@@ -15,7 +15,5 @@ jobs:
     - uses: actions/setup-go@v1
       with:
         go-version: '1.13'
-    - run: pwd
-    - run: echo "$GITHUB_WORKSPACE"
-    - run: ls ..
-    - run: ls ../kcptun
+    - run: ./build-release.sh
+      working-directory: ../kcp
