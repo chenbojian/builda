@@ -15,5 +15,5 @@ jobs:
     - uses: actions/setup-go@v1
       with:
         go-version: '1.13'
-    - run: go version
+    - run: go build -o server_linux_arm64  github.com/xtaci/kcptun/server
 
