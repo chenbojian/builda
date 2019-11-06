@@ -12,8 +12,7 @@ jobs:
       with:
         repository: xtaci/kcptun
         ref: v20191105
-    - name: show current folder
-      run: ls
-    - name: show
-      run: pwd
+    - uses: actions/setup-go@v1
+    - name: go version
+      run: go --version
 
