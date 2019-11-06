@@ -12,4 +12,8 @@ jobs:
       with:
         repository: xtaci/kcptun
         ref: v20191105
-    - run: ls
+    - name: show current folder
+      run: ls
+    - name: show
+      run: pwd
+
