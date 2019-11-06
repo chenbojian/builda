@@ -15,7 +15,7 @@ jobs:
     - uses: actions/setup-go@v1
       with:
         go-version: '1.13'
-    - run: ../
+    - run: cd ../kcptun
     - run: pwd
     - name: build
       run: ./build-release.sh
