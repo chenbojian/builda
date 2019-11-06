@@ -8,14 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-      with:
-        repository: xtaci/kcptun
-        ref: v20191105
     - uses: actions/setup-go@v1
       with:
         go-version: '1.13'
-    - run: pwd
-      working-directory: ../kcptun
-    - name: build
-      run: cd ../kcptun && ./build-release.sh
+    - run: ./build.sh
