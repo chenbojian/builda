@@ -13,6 +13,7 @@ jobs:
         repository: xtaci/kcptun
         ref: v20191105
     - uses: actions/setup-go@v1
-    - name: go version
-      run: go --version
+      with:
+        go-version: '1.13'
+    - run: go version
 
